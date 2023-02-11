@@ -177,7 +177,7 @@ const CustomerLogin = () => {
           onPress={onSignInPressed}
           style={styles.button}
         >
-          <Text style={styles.buttonText}> Customer Login</Text>
+          <Text style={styles.buttonText}> Provider Login</Text>
         </TouchableOpacity>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
