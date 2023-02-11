@@ -104,7 +104,7 @@ const ProviderLogin = () => {
                     }
                   else {
                       setError({field:'',message:''});
-                      navigation.navigate('Home')
+                      navigation.navigate('Pstart');
                   }
                 }
                     

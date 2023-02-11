@@ -6,11 +6,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AdminLogin from "./AdminLogin";
 import ProviderLogin from "./ProviderLogin";
 import CustomerLogin from "./CustomerLogin";
-import AdminRegister from "./AdminRegsiter";
+import AdminRegister from "./AdminRegister";
 import CustomerRegister from "./CustomerRegister";
 import ProviderRegister from "./ProviderRegister";
 import HomeScreen from "./HomeScreen";
 import FirstScreen from "./FirstScreen";
+import ProvideFirst from "./ProvideFirst";
+
 const Stack = createNativeStackNavigator();
 const AppStack = () => {
   return (
@@ -21,6 +23,7 @@ const AppStack = () => {
         }}
       >
         <Stack.Screen name="First" component={FirstScreen} />
+        
         <Stack.Screen name="ALogin" component={AdminLogin} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="PLogin" component={ProviderLogin} />
@@ -28,6 +31,7 @@ const AppStack = () => {
         <Stack.Screen name="Areg" component={AdminRegister} />
         <Stack.Screen name="Creg" component={CustomerRegister} />
         <Stack.Screen name="Preg" component={ProviderRegister} />
+        <Stack.Screen name="Pstart" component={ProvideFirst}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
